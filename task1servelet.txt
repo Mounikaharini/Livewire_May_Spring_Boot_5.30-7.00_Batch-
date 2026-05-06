@@ -1,0 +1,45 @@
+package class1;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+@WebServlet("/task1")
+public class task1 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public task1() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		
+		PrintWriter out = response.getWriter();
+		
+//		out.write("<h1 style='color:red'>hi</h1>");
+//		out.write("<h1 style='color:red'>hi</h1>");
+//		
+//		out.close();
+//		
+//		out.print("<p>request.getParameter('name')</p>");
+//		out.write("<p>request.getParameter('name')</p>");
+		String a = request.getParameter("name");
+		String b = request.getParameter("course");
+		String c = request.getParameter("age");
+		out.write(a);	
+		out.write(b);
+		out.write(c);
+		out.close();
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}
