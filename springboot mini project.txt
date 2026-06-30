@@ -1,0 +1,210 @@
+springboot mini project
+
+===================================================================
+1>Amazon Product API
+===================================================================
+
+id
+productName
+brand
+category
+price
+discount
+stock
+rating
+description
+seller
+deliveryDays
+
+
+POST /products
+
+GET /products
+
+GET /products/{id}
+
+PUT /products/{id}
+
+DELETE /products/{id}
+
+GET /products/category/{category}
+
+GET /products/brand/{brand}
+
+GET /products/priceLessThan/{price}
+
+GET /products/priceBetween/{min}/{max}
+
+GET /products/rating/{rating}
+
+GET /products/stock
+
+GET /products/sort/price
+
+GET /products/sort/rating
+
+
+===================================================================
+2>Employee Management API
+===================================================================
+
+id
+employeeName
+email
+phone
+department
+designation
+salary
+experience
+joiningDate
+status
+
+POST   /employees
+
+GET    /employees
+
+GET    /employees/{id}
+
+PUT    /employees/{id}
+
+DELETE /employees/{id}
+
+GET    /employees/department/{department}
+
+GET    /employees/designation/{designation}
+
+GET    /employees/salaryGreaterThan/{salary}
+
+GET    /employees/experience/{years}
+
+GET    /employees/status/{status}
+
+GET    /employees/sort/salary
+
+GET    /employees/sort/experience
+
+===================================================================
+3>Student Management API
+===================================================================
+
+
+id
+studentName
+rollNumber
+department
+year
+cgpa
+email
+phone
+city
+college
+
+
+POST   /students
+
+GET    /students
+
+GET    /students/{id}
+
+PUT    /students/{id}
+
+DELETE /students/{id}
+
+GET    /students/department/{department}
+
+GET    /students/year/{year}
+
+GET    /students/cgpaGreaterThan/{cgpa}
+
+GET    /students/city/{city}
+
+GET    /students/sort/cgpa
+
+GET    /students/sort/name
+
+
+===================================================================
+4>Medical Store API
+===================================================================
+
+id
+medicineName
+company
+category
+price
+stock
+expiryDate
+dosage
+prescriptionRequired
+rating
+
+
+
+POST   /medicines
+
+GET    /medicines
+
+GET    /medicines/{id}
+
+PUT    /medicines/{id}
+
+DELETE /medicines/{id}
+
+GET    /medicines/company/{company}
+
+GET    /medicines/category/{category}
+
+GET    /medicines/expiry/{date}
+
+GET    /medicines/stock
+
+GET    /medicines/sort/price
+
+GET    /medicines/sort/expiry
+
+
+===================================================================
+5>Flight Booking API
+===================================================================
+
+
+id
+flightNumber
+airline
+source
+destination
+departureTime
+arrivalTime
+price
+availableSeats
+status
+
+POST   /flights
+
+GET    /flights
+
+GET    /flights/{id}
+
+PUT    /flights/{id}
+
+DELETE /flights/{id}
+
+GET    /flights/source/{source}
+
+GET    /flights/destination/{destination}
+
+GET    /flights/priceBetween/{min}/{max}
+
+GET    /flights/available
+
+GET    /flights/sort/price
+
+GET    /flights/sort/departure
+
+
+
+
+
+
+
+
